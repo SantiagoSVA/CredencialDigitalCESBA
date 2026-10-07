@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root" android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/paper" android:fillViewport="true" android:clipToPadding="false">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="24dp">
+        <TextView style="@style/Text.Cesba.Label" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:text="@string/institution_place" android:layout_marginBottom="24dp"/>
+        <com.google.android.material.card.MaterialCardView android:id="@+id/hero"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/cesba_blue" app:cardCornerRadius="36dp"
+            app:cardElevation="0dp" app:strokeWidth="0dp">
+            <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <mx.edu.cesba.credencial.ui.common.EditorialBackdropView
+                    android:layout_width="match_parent" android:layout_height="match_parent" android:importantForAccessibility="no"/>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="vertical" android:padding="28dp">
+                    <ImageView android:id="@+id/logo" android:layout_width="190dp" android:layout_height="90dp"
+                        android:src="@drawable/cesba_logo_white" android:scaleType="fitCenter"
+                        android:contentDescription="@string/logo_description" android:layout_gravity="start"/>
+                    <View android:layout_width="36dp" android:layout_height="5dp"
+                        android:background="@drawable/bg_accent" android:layout_marginTop="44dp"/>
+                    <TextView android:id="@+id/title" style="@style/Text.Cesba.Title"
+                        android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:text="@string/home_title" android:textColor="@color/white" android:textSize="42sp" android:layout_marginTop="20dp"/>
+                    <TextView android:id="@+id/motto" android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:text="@string/motto" android:textColor="#E0E8F2" android:textSize="17sp"
+                        android:lineSpacingExtra="4dp" android:layout_marginTop="24dp" android:layout_marginBottom="24dp"/>
+                </LinearLayout>
+            </FrameLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <Space android:layout_width="1dp" android:layout_height="24dp" android:layout_weight="1"/>
+        <TextView android:id="@+id/author" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/author" android:textColor="@color/muted" android:textSize="14sp"
+            android:layout_marginTop="16dp" android:layout_marginBottom="20dp"/>
+        <com.google.android.material.button.MaterialButton android:id="@+id/createButton"
+            android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/create_credential"/>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/root"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true"
+    android:background="@color/cesba_blue" android:clipToPadding="false">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="24dp">
+        <TextView style="@style/Text.Cesba.Label" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/photo_title" android:textColor="#DCE6F4"/>
+        <TextView style="@style/Text.Cesba.Title" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/camera_title" android:textColor="@color/white" android:textSize="34sp" android:layout_marginTop="18dp"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/camera_instruction" android:textColor="#DCE6F4" android:textSize="16sp" android:layout_marginTop="12dp"/>
+        <com.google.android.material.card.MaterialCardView android:layout_width="match_parent" android:layout_height="360dp"
+            android:layout_marginTop="24dp" app:cardCornerRadius="32dp" app:cardElevation="0dp" app:strokeWidth="0dp"
+            app:cardBackgroundColor="#0D2545">
+            <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                <androidx.camera.view.PreviewView android:id="@+id/preview" android:layout_width="match_parent" android:layout_height="match_parent"
+                    app:implementationMode="compatible" app:scaleType="fillCenter"/>
+                <mx.edu.cesba.credencial.ui.camera.CameraGuideView android:layout_width="match_parent" android:layout_height="match_parent"
+                    android:importantForAccessibility="no"/>
+            </FrameLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <TextView android:id="@+id/status" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/camera_loading" android:textColor="@color/white" android:textSize="14sp"
+            android:layout_marginTop="20dp" android:accessibilityLiveRegion="polite"/>
+        <com.google.android.material.button.MaterialButton android:id="@+id/captureButton"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/capture_photo" android:enabled="false" android:layout_marginTop="24dp"
+            app:backgroundTint="@color/cesba_orange" android:textColor="@color/ink"/>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Credencial Digital CESBA</string>
+    <string name="home_title">Credencial\nDigital CESBA</string>
+    <string name="author">Autor · [TU NOMBRE]</string>
+    <string name="motto">Aquí comienza el resto de tu vida</string>
+    <string name="institution_place">CESBA / QUERÉTARO</string>
+    <string name="create_credential">Crear credencial</string>
+    <string name="form_title">Datos del\nestudiante</string>
+    <string name="form_subtitle">Tu identidad, en cada detalle.</string>
+    <string name="progress_format">%1$d de %2$d campos válidos</string>
+    <string name="full_name">Nombre completo</string>
+    <string name="student_id">Matrícula</string>
+    <string name="career">Carrera</string>
+    <string name="period_type">Tipo de periodo</string>
+    <string name="period_number">Número del periodo</string>
+    <string name="group">Grupo</string>
+    <string name="email">Correo electrónico</string>
+    <string name="user_type">Tipo de usuario</string>
+    <string name="photo_title">Tu fotografía</string>
+    <string name="photo_hint">Toma una foto de frente, con buena luz.</string>
+    <string name="photo_required">Toma una foto para generar tu credencial.</string>
+    <string name="photo_valid">Fotografía lista.</string>
+    <string name="take_photo">Tomar foto</string>
+    <string name="retake_photo">Volver a tomar foto</string>
+    <string name="generate_credential">Generar credencial</string>
+    <string name="logo_description">Logotipo oficial de CESBA</string>
+    <string name="photo_description">Fotografía para la credencial</string>
+    <string name="valid_field">Campo válido</string>
+    <string name="required_selection">Selecciona una opción.</string>
+    <string name="name_error">Escribe al menos dos palabras, solo con letras y espacios.</string>
+    <string name="id_error">La matrícula debe tener entre %1$d y %2$d dígitos (0–9).</string>
+    <string name="group_error">Usa de 1 a 10 letras o números, sin espacios.</string>
+    <string name="email_error">Escribe un correo electrónico válido.</string>
+    <string name="camera_title">Tu mejor\nprimera impresión.</string>
+    <string name="camera_instruction">Mira de frente a la cámara.</string>
+    <string name="capture_photo">Capturar foto</string>
+    <string name="camera_loading">Preparando cámara…</string>
+    <string name="camera_denied">Permiso de cámara denegado. Puedes volver a intentar desde “Tomar foto”.</string>
+    <string name="camera_denied_permanently">La cámara está bloqueada. Activa el permiso en Ajustes → Aplicaciones → Credencial Digital CESBA → Permisos y vuelve a tomar la foto.</string>
+    <string name="camera_unavailable">No se pudo abrir la cámara. Comprueba que esté disponible y vuelve a intentar.</string>
+    <string name="camera_capture_error">No se pudo capturar la foto. Inténtalo de nuevo.</string>
+    <string name="photo_load_error">No se pudo leer la foto. Vuelve a tomarla.</string>
+    <string name="credential_title">Tu credencial.\nTu siguiente paso.</string>
+    <string name="credential_label">CREDENCIAL DIGITAL</string>
+    <string name="credential_hint">Toca la credencial para girarla.</string>
+    <string name="credential_front">Frente</string>
+    <string name="credential_back">Reverso</string>
+    <string name="flip_accessibility">Girar credencial</string>
+    <string name="qr_description">Código QR con los datos de la credencial</string>
+    <string name="qr_label">IDENTIDAD CESBA</string>
+    <string name="qr_error">No se pudo crear el código QR. Vuelve al formulario para intentarlo de nuevo.</string>
+    <string name="invalid_credential">Los datos de la credencial no son válidos. Revisa el formulario.</string>
+    <string name="period_format">%1$s %2$d</string>
+    <string name="group_format">Grupo %1$s</string>
+    <string-array name="careers">
+        <item>Administración</item><item>Arquitectura</item>
+        <item>Comercio Internacional</item><item>Contaduría Pública</item>
+        <item>Contaduría y Finanzas</item><item>Criminología</item><item>Derecho</item>
+        <item>Diseño y Comunicación Audiovisual</item><item>Enfermería</item>
+        <item>Fisioterapia</item><item>Ingeniería Industrial</item>
+        <item>Mercadotecnia y Negocios</item><item>Nutrición</item><item>Pedagogía</item>
+        <item>Psicología</item><item>Sistemas Computacionales</item>
+    </string-array>
+    <string-array name="period_types"><item>Semestre</item><item>Cuatrimestre</item></string-array>
+    <string-array name="user_types"><item>Alumno</item><item>Docente</item><item>Administrativo</item></string-array>
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Colores dominantes medidos en el PNG oficial. -->
+    <color name="cesba_blue">#183D6E</color>
+    <color name="cesba_orange">#F36B21</color>
+    <color name="paper">#F7F6F2</color>
+    <color name="ink">#0E0F13</color>
+    <color name="muted">#596471</color>
+    <color name="white">#FFFFFF</color>
+    <color name="outline">#D8DBDF</color>
+    <color name="soft_blue">#EBF0F6</color>
+    <color name="error">#B3261E</color>
+    <color name="valid">#1E7B4F</color>
+</resources>
